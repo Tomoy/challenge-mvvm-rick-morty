@@ -22,7 +22,7 @@ class RMCharactersRepositoryWeb: RMCharactersRepository {
     
     func getRMCharacters(complete: @escaping (RMCharactersResponse?, String?) -> ()) {
         
-        let endpointURL = URL(string: "\(Constants.API_HOST)/api/characters")!
+        let endpointURL = URL(string: "\(Constants.API_HOST)/api/character")!
 
         apiService.getData(with: endpointURL) { (success, data, error) in
             
